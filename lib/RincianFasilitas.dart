@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const RincianFakultas());
+  runApp(const RincianFasilitas());
 }
 
-class RincianFakultas extends StatelessWidget {
-  const RincianFakultas({Key? key}) : super(key: key);
+class RincianFasilitas extends StatelessWidget {
+  const RincianFasilitas({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -31,8 +31,8 @@ class RincianFakultas extends StatelessWidget {
                               width: 70,
                             ),
                           ),
-                          const Text("FPMIPA"),
-                          Text("FPMIPA didirikan"),
+                          const Text("Kolam Renang"),
+                          Text("Kolam Renang didirikan"),
                         ],
                       ),
                     ])),
