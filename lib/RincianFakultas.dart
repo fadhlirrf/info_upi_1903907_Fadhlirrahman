@@ -15,28 +15,29 @@ class RincianFakultas extends StatelessWidget {
           title: const Text('Rincian Fakultas'),
         ),
         body: Center(
-          child: Column(mainAxisAlignment: MainAxisAlignment.start, children: [
-            Container(
-                padding: const EdgeInsets.all(14),
-                child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Column(
-                        //image dan teks dibawah
-                        children: [
-                          Container(
-                            padding: const EdgeInsets.all(10),
-                            child: Image.network(
-                              'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg',
-                              width: 70,
-                            ),
-                          ),
-                          const Text("FPMIPA"),
-                          Text("FPMIPA didirikan"),
-                        ],
-                      ),
-                    ])),
-          ]),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              //gambar dan @userid
+              Center(
+                  child: Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                    Container(
+                        padding: const EdgeInsets.all(10),
+                        child: Image.network(
+                          'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg',
+                          width: 150,
+                        )),
+                    const Text(
+                      "FPMIPA",
+                      style:
+                          TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
+                    ),
+                    Text("FPMIPA didirikan"),
+                  ])),
+            ],
+          ),
         ),
       ),
     );
